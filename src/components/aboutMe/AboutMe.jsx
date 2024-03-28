@@ -85,9 +85,11 @@ const AboutMe = () => {
               </div>
             </div>
           </div>
-          <button onClick={handleDownload}>
-            Download <strong>CV</strong>
-          </button>
+          <div className="buttonContainer">
+            <button onClick={handleDownload}>
+              Download <strong>CV</strong>
+            </button>
+          </div>
         </div>
       </div>
     </div>

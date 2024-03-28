@@ -4,29 +4,18 @@
   width: 1366px;
   margin: auto;
 
-  @include mobile {
-    width: 350px;
-    margin: auto;
-  }
-
   .aboutText {
     margin-top: 10px;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h1 {
       font-size: 44px;
       font-weight: 700;
-      text-align: center;
       letter-spacing: 0.7px;
       color: orange;
-
-      @include mobile {
-        text-align: center;
-      }
-    }
-
-    @include mobile {
-      margin-top: 30px;
     }
   }
 
@@ -39,6 +28,7 @@
     margin-bottom: 30px;
 
     .imageBox {
+      display: none;
       img {
         display: inline-block;
         width: 550px;
@@ -46,10 +36,6 @@
         grid-row-gap: 50px;
         object-fit: cover;
         border-radius: 10px;
-      }
-
-      @include mobile {
-        display: none;
       }
     }
 
@@ -92,16 +78,7 @@
             box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
           }
         }
-
-        @include mobile {
-          display: none;
-        }
       }
-
-      .buttonContainer {
-        display: flex;
-      }
-
       button {
         background-color: orange;
         padding: 10px 15px;
@@ -109,16 +86,6 @@
         cursor: pointer;
         border: none;
         border-radius: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        display: inline-block;
-
-        @include mobile {
-          margin-top: 30px;
-          display: inline-block;
-          margin-left: auto;
-          margin-right: auto;
-        }
       }
     }
   }
