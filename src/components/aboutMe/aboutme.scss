@@ -1,0 +1,91 @@
+@import "../../app.scss";
+
+.about {
+  width: 1366px;
+  margin: auto;
+
+  .aboutText {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 44px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      color: orange;
+    }
+  }
+
+  .aboutbox {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    margin-bottom: 30px;
+
+    .imageBox {
+      img {
+        display: inline-block;
+        width: 550px;
+        height: 500px;
+        grid-row-gap: 50px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+
+    .textContainer {
+      h2 {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        color: #d40c7d;
+        margin-bottom: 20px;
+      }
+      .techStack {
+        h3 {
+          font-size: 22px;
+          text-transform: uppercase;
+          text-align: center;
+          margin-top: 5px;
+          margin-bottom: 20px;
+          color: orange;
+        }
+
+        .skills {
+          display: flex;
+          justify-content: space-between;
+
+          .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+          }
+
+          img {
+            object-fit: cover;
+
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+      button {
+        background-color: orange;
+        padding: 10px 15px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 20px;
+      }
+    }
+  }
+}
