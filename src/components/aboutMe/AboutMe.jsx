@@ -7,10 +7,10 @@ const AboutMe = () => {
 
   useEffect(() => {
     if (downloadCv) {
-      const downloadUrl = "./rudresh.pdf";
+      const downloadUrl = "./rudresh1.pdf";
       const link = document.createElement("a");
       link.href = downloadUrl;
-      link.download = "rudresh.pdf";
+      link.download = "rudresh1.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -38,14 +38,17 @@ const AboutMe = () => {
             A dedicated Front-end Developer at Do your thng (DYT) , Bengaluru 📍
           </h2>
           <p>
-            As a Junior Front-End Developer, I possess an impressive arsenal of
-            skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel
-            in designing and maintaining responsive websites that offer a smooth
-            user experience. My expertise lies in crafting dynamic, engaging
+            As a Junior Front-End Developer with specialization in React and
+            React Native, I possess an impressive arsenal of skills in HTML,
+            CSS, JavaScript, React, React Native, Tailwind, and SCSS. I excel in
+            designing and maintaining responsive websites as well as mobile
+            applications that offer a smooth user experience across different
+            platforms. My expertise lies in crafting dynamic, engaging
             interfaces through writing clean and optimized code and utilizing
-            cutting-edge development tools and techniques. I am also a team
-            player who thrives in collaborating with cross-functional teams to
-            produce outstanding web applications.
+            cutting-edge development tools and techniques specific to both web
+            and mobile platforms. I am also a team player who thrives in
+            collaborating with cross-functional teams to produce outstanding web
+            and mobile applications.
           </p>
           <div className="techStack">
             <h3>techStack</h3>
